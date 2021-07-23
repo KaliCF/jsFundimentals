@@ -27,7 +27,7 @@ console.log(a + b);
         ex:
             let myName = 'kali';
             is easier to read than
-            let myname = ;kali';
+            let myname = 'kali';
 */
 
 let startingWithLetter = 'test';
