@@ -1,7 +1,7 @@
 /*
     LOOPS:
-Loops allow us to go over a block of information or code in a determined amount of cycles. It's important to note that it is possible for us to write 
-code without declaring an endpoint. 
+Loops allow us to go over a block of information or code in a determined amount of cycles. It's important to 
+note that it is possible for us to write code without declaring an endpoint. 
 Loops help us repeat a process without writing alot of code.
 NOTE: press ctrl + c while clicked in the output window, it will stop the  code from running.
 */
@@ -61,7 +61,8 @@ for (let b = 0; b < word.length; b++) {
 
 /*
     FOR IN LOOPS:
-With for loops, we are seeking an index value and sunning it against a condition. For in loops do not require an index number
+With for loops, we are seeking an index value and sunning it against a condition. For in loops do not require
+an index number
 */
 //Example:
 //in loop:
