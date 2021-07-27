@@ -73,6 +73,7 @@ methods are tools that can help us manipulate data
 .property .method()
 no parens   parans
 */
+//! Control Flow and Conditionals.
 /*
     CONDITIONALS
 FALSE VALUES:
@@ -89,4 +90,217 @@ Side note: there are also Truthy values in JS, which tend to be much less limite
 IF STATEMENTS:
     When we use comparison operators, we typically are asking if we can move on to the next section of code. "if" something is
 true, so "this thing".
+*/
+/*
+    IF ELSE:
+We can think of this as not only providing and answer if our condition evaluates to be true, but also it ends up being false.
+*/
+/*
+    ELSE IF:
+This is a condition that will be checked if the above condition was not met.
+*/
+/*
+    TERNARIES:
+They are if/else statements but they look weird!
+*/
+/*
+    SWITCH STATEMENTS:
+The switch statements executes a block of code depending on different cases.
+*/
+/*
+    LOOPS:
+Loops allow us to go over a block of information or code in a determined amount of cycles. It's important to
+note that it is possible for us to write code without declaring an endpoint.
+Loops help us repeat a process without writing alot of code.
+NOTE: press ctrl + c while clicked in the output window, it will stop the  code from running.
+*/
+
+/*
+    STRUCTURE:
+We have to set up our loops in a way we can:
+1) See where we are in a loop
+2) Consider what sort of condition we want to run it against
+3) Know when we are done with that condition and move on to the next iteration.
+
+We need to:
+1) Creat an Index
+2) Run a condition
+3) Change to the indexing variable (execution of conditions)
+*/
+/*
+We start our loop with a "for". Within this function, we are injecting some parameters that JS will run against. Index; condition, change index ->
+result.
+Within parameter, we are stating our index declaration to 0. This is our baseline. We move on to asking if that variable is less or equal to the number
+10, take that set number and add 1 to it. Once that is processed, return that value (in this case 'console.log of that number). Once our condition
+is met, we return a FALSE which ends our loop.
+NOTE (syntax):
+for(<create an index variable>; <run condition>; <change index>){
+    <return results>
+    <cont. until the condition is met>
+}
+If we don't know what our condition is, the loop will not have a finish line and thus run until we have to force it closed. No condition means that JS
+doesn't know when to stop and will never assume that information.
+    Example:
+for(let i = 0; i ++){
+    console.log(i);
+}
+*/
+/*
+    FOR IN LOOPS:
+With for loops, we are seeking an index value and sunning it against a condition. For in loops do not require
+an index number
+*/
+//!Functions
+/*
+    FUNCTIONS:
+Functions are processes that we call upon to run an action. They can do the following:
+-Take in an input to process, modify, or respond to (not required tho)
+-Return a value (not required)
+-Can be invoked (or called) as often as needed.
+(A variable that does something.)
+*/
+//When we console.log a function jS will first evaluted the function meaning will read all the code and look
+//for a value from it. If we do not have a return statement from with in tht function we will get back undefined
+//*avoid calling in a function in the same function because recursion happens(can melt comp)
+
+/*
+    FUNTIONS DECLARATION:
+A chunk of code that performs a set chunk of code when it is invoked (called)
+*calling a function is the same as invoking function.
+*/
+/*
+    FUNCTION EXPRESSIONS:
+Assigning a function to a variable is what we call an expression.
+*/
+/*
+    ANONYMOUS FUNCTIONS:
+Anonymous functions are stored in memory but the runtime does not automatically create a reference to it.
+Main use would be to pass these functions through another function. maybe have a ternaty where if something
+is true we run one function, else we run a different function.
+*/
+/*
+    PARAMETERS:
+We will be using functions to pass in information and return a result. Parameters will allow our function
+to take in outside information.
+*/
+/*
+    ARROW FUNCTIONS:
+Arrow functions are expressional functions that can be simplified into one of two forms: concise body and
+block body. The main goal is to generate shorter syntax for writing a function.
+*/
+// CONCISE vs BLOCK BODY
+/*
+When we have a simple return, or response, from our arrow function, it makes sense to write it in a concise,
+simplified way. When we use a concise boy arrow function, the "return" statement is implied.
+*/
+/*
+    BLOCK BODY FUNCTION:
+*if you return you can keep info returned.
+*/
+//* Using a block body arrow, pass the same variables but increase the number of shots until the second
+//* console.log is printed.
+//1- block body arrow function (?)
+//2- pass in 2 variables []
+//3- run conditional []
+//4- repeat the code until the result changes?
+//!Objects and Arrays:
+//*Arrays
+/*
+-populating and referring
+-methods
+-length
+-iterating
+*/
+/*
+When calling an array, we can append, or add, [] onto the end of an array name with index number of the
+value we want to reference. This is known as SQUARE BRACKET NOTATION.
+
+JS starts counting at 0, so when we console.log(list[1]) we should see 'banana'.
+*/
+/*
+    ARRAY METHODS:
+We can call on multiple different array methods that will allow us to manipulate arrays as we need to.
+*/
+/*
+    ITERATING:
+forEach-
+-forEach() method executes a provided function once for each element in the array.
+-the forEach() method does the same thing as a for loop or a for of loop -->both iterate over the
+properties in an array.
+-provide a callback function that has up to 3 arguments:
+    1. the value
+    2. the index
+    3. the array object itself
+*/
+/*
+    OBJECTS:
+-Objects are used to store multiple sets of data in the key/value pair  format
+-Denoted by {}
+*/
+/*
+    JSON OBJECT:
+-JSON stands for JavaScript Objecy Notation.
+-The JSON syntax is derived from JavaScript Object syntax, but the JSON format is text only.
+(turns arrays into strings)
+-JSON exists as a string- useful when fetching data from a server. It needs to be translated into a native
+JavaScript object if we want to access the data.
+*/
+/*
+    OBJECT BRACKET NOTATION:
+-Object bracket notation can allow us to find a value in an object we wouldn't be able to access using
+dot notation.
+-We can also use object bracket notation to store a key in a variable and use that variable to access
+information in an object.
+-This works because all key names in an object are strings.
+*/
+//!DOM:
+/*
+    DOM:
+Stands for Document Object Model, and is what allows our JS to interact with HTML & CSS of our page.
+The DOM specifies how browsers should create a model of an HTML page and how JS can access and update
+the contents of a web page while it is in the browser's window.
+
+DOM is an object representation of a web page, which can be modified with a scripting language like
+JavaScript.
+
+There are 2 primary things that a DOM will do:
+1. Making a model of an HTML page
+    -when the browser loads a webpage, it creates a model of the page in memory.
+    -the DOM specifies the way in which the browser should structure the model in what is called the
+    DOM tree. The DOM is called an object model becasue the DOM tree is made of objects.
+2. Accessing and changing the HTML page.
+    -the DOM also provided methods and properties to access and update each object in the model, which
+    in turn updates what the user sees in the browswer.
+
+Usually when working with DOM tree, we will access an element we want to work with  and then we will
+modify or manipulate it.
+
+ACCESSING:
+    Common Methods for Access a Single Element:
+-getElementById()
+-querySelector()
+
+    Common Methods for Accessing Mulitple Elements:
+-querySelectorAll()
+-getElementByClassName()
+-getElementByTagName()
+
+MANIPULATING:
+    Commone Methods for Working With HTML Content:
+-innerHTML
+-textContent
+-createElement
+
+    Common Methods for Working with Tag Attributes:
+-className / id
+-setAttribute()
+-getAttribute()
+*/
+/*
+    INNERTEXT vs INNERHTML vs TEXTCONTENT:
+-innerText will simply reference or allow us to change the text of a specified element. Will return
+visible text in a 'Node"
+-textContent does the same thing that innerText does, but will return the FULL text of a 'Node'
+-innerHTML allows us to set text as well as HTML elements, which all be nested inside of the current
+HTML element we are referencing.
 */

@@ -12,7 +12,8 @@ What does this mean? Whenever JS is expecting a value and is given one of these 
 Side note: there are also Truthy values in JS, which tend to be much less limited. Examples include: true, {}, [], 42, "false".
 
 IF STATEMENTS:
-    When we use comparison operators, we typically are asking if we can move on to the next section of code. "if" something is true, so "this thing".
+    When we use comparison operators, we typically are asking if we can move on to the next section of 
+code. "if" something is true, so "this thing".
 
 */
 //If Example:
@@ -205,14 +206,14 @@ if (character === 'Michael') {
     console.log('*slow camera zoom*');
 }
 */
-    //Ternary
+//Ternary
 let character = 'Dwight'
 character === 'Michael' ? console.log(`That's what she said!`) :
     character === 'Dwight' ? console.log(`It's not weed! It's hemp!`) :
         character === 'Jim' ? console.log(`Bears, beets, Battlestar Galactica.`) :
             console.log(`*slow camera zoom*`);
 
-    //Switch
+//Switch
 let char = 'Jim'
 switch (char) {
     case 'Michael':
