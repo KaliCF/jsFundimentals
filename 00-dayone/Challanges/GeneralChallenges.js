@@ -39,3 +39,17 @@ function findPerimeter(length, width) {
     } else { console.log(`False. The perimeter is ${x}`) }
 }
 findPerimeter(5, 3);
+
+//!Challenge:
+//Move the button into a variable, and when you click the button it will turn blue or if blue turns red
+
+let button = document.getElementById('clickThis');
+
+button.addEventListener('click', ev => {
+    console.log(ev.target.style.backgroundColor);
+    if (ev.target.style.backgroundColor == 'blue') {
+        ev.target.style.backgroundColor = 'red';
+    } else {
+        ev.target.style.backgroundColor = 'blue';
+    }
+})
