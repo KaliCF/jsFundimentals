@@ -53,3 +53,36 @@ button.addEventListener('click', ev => {
         ev.target.style.backgroundColor = 'blue';
     }
 })
+
+//! Challenge
+//create a function that takes in a string and turns it to pig latin.
+/*
+1. make function
+2. variables in a loop
+3. for loop
+4. if else
+5. console.log
+6. call function
+*/
+
+function pigLatin(string) {
+    let wordArray = string.split(' ');
+
+    let newWordArray = [];
+
+    for (let word of wordArray) {
+        if (word[0] == 'a' || word[0] == 'e' || word[0] == 'i' || word[0] == 'o' || word[0] == 'u') {
+            word += 'ay' //basically means word = word + 'ay'
+            newWordArray.push(word);
+        } else {
+            let letters = word.split('');
+            let shift = letters.shift();
+            letters.push(shift, 'ay');
+            word = letters.join('');
+            newWordArray.push(word);
+        }
+    }
+    console.log(newWordArray.join(' '));
+}
+
+pigLatin('pig latin is cool');
