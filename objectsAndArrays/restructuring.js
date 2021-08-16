@@ -8,7 +8,7 @@ great for pulling information out of an array/object and assign that data to its
 
 const boardGames = ['Catan', 'Monoply', 'clue']
 
-const [gameOne, gameTwo, gameThree] = boarddGames;
+const [gameOne, gameTwo, gameThree] = boardGames;
 
 
 /*
