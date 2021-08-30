@@ -348,3 +348,11 @@ It has 3 states it can be in:
     -Fufilled: meaning the operation completed successfully.
     -Rejected: meaning the operation failed.
 */
+/*
+    NAME CASING:
+- camelCasing
+- snake_casing
+- PascalCasing
+- kebob-case
+- UPPER_CASE_SNAKE_CASING
+*/
